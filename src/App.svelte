@@ -1,5 +1,6 @@
 <script>
   import Fun from './Components/Fun.svelte';
+  import ColorPicker from './Components/ColorPicker.svelte';
   let favoriteColor = 'red';
   let name = "";
   let isDisabled = false;
@@ -12,4 +13,5 @@
     <input type="text" placeholder="Enter your name" bind:value={name}/>
     <button disabled={isDisabled}>Click Me</button>
   </div>
+  <ColorPicker/>
 </div>
